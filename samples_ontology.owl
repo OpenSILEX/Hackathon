@@ -1,0 +1,484 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#"
+     xml:base="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#containedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#containedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Sample"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Container"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#hasAssignedPeriod -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#hasAssignedPeriod">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Laboratory"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#AssignmentPeriod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#hasInput -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#hasInput">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Process"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Sample"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#hasOutput -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#hasOutput">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Process"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Sample"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#hasReferentDuring -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#hasReferentDuring">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Device"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#ReferentPeriod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#isAssignedDuring -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#isAssignedDuring">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#AssignmentPeriod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#isOperatorIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#isOperatorIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Process"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#isReferent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#isReferent">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#ReferentPeriod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#isResponsible -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#isResponsible">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#useAddingProduct -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#useAddingProduct">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Process"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#AddingProduct"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#usedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#usedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Device"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Process"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#address -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#address">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Laboratory"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#creationDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#creationDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Sample"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#density -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#density"/>
+    
+
+
+    <!-- http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#description -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#description"/>
+    
+
+
+    <!-- http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#endDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#endDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#AssignmentPeriod"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#OwnershipPeriod"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#ReferentPeriod"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#endLocation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#endLocation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#granularity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#granularity">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Powder"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#localID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#localID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Sample"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#locationUri -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#locationUri"/>
+    
+
+
+    <!-- http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#mark -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#mark">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Device"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Device"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#quantity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#quantity">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#AddingProduct"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#startDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#startDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#AssignmentPeriod"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#OwnershipPeriod"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#ReferentPeriod"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#startLocation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#startLocation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#type -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#type"/>
+    
+
+
+    <!-- http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#volume -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#volume">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Liquid"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Powder"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#weight -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#weight">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Powder"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Solid"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#AddingProduct -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#AddingProduct"/>
+    
+
+
+    <!-- http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#AssignmentPeriod -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#AssignmentPeriod">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Period"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Bag -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Bag">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Container"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Container -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Container"/>
+    
+
+
+    <!-- http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Device -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Device"/>
+    
+
+
+    <!-- http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Eppendorf -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Eppendorf">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Container"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Freezing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Freezing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Storage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Gaseous -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Gaseous">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Sample"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Grinding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Grinding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Transforming"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Laboratory -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Laboratory"/>
+    
+
+
+    <!-- http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Liquid -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Liquid">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Sample"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Living -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Living">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Sample"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Merging -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Merging">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Transforming"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#NonTransforming -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#NonTransforming">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#OwnershipPeriod -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#OwnershipPeriod">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Period"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Period -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Period"/>
+    
+
+
+    <!-- http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#PetriDish -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#PetriDish">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Container"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Powder -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Powder">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Sample"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Process -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Process"/>
+    
+
+
+    <!-- http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Protocol -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Protocol"/>
+    
+
+
+    <!-- http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#ReferentPeriod -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#ReferentPeriod">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Period"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Sample -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Sample"/>
+    
+
+
+    <!-- http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Solid -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Solid">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Sample"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Split -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Split">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Transforming"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Storage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Storage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#NonTransforming"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Transforming -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Transforming">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Transport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#Transport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boizetal/ontologies/2019/2/untitled-ontology-23#NonTransforming"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
