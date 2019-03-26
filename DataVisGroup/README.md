@@ -40,3 +40,14 @@ token <- getToken("guest@opensilex.org","guest")$data
 ```{r}
 ?phisWSClientR::getEnvironmentData
 ```
+
+7. Change the *plotVarDemo.R* file using RStudio
+
+8. Change the *getDF.R* file in order to get individual filters and remove the "chosen sensors" section
+
+9. The variables of interest in our example are :
+
+- LAI : http://www.opensilex.org/demo/id/variables/v001
+- maximum wind speed : http://www.opensilex.org/demo/id/variables/v004
+
+
