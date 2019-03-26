@@ -16,7 +16,7 @@ For this purpose, we will test if it is possible to adapt the BrAPI-Graphical-Fi
 git clone https://github.com/OpenSILEX/opensilex-datavis-rapp-demo.git
 ```
 
-2. Change your directory name from "opensilex-datavis-rapp-demo" to something else (e.g. "hackathon-app")
+2. Change your directory name from "opensilex-datavis-rapp-demo" to something else (e.g. "hackathonApp")
 
 3. Double-click on the .RProj file to open with RStudio the project you downloaded from GitHub
 
@@ -49,5 +49,9 @@ token <- getToken("guest@opensilex.org","guest")$data
 
 - LAI : http://www.opensilex.org/demo/id/variables/v001
 - maximum wind speed : http://www.opensilex.org/demo/id/variables/v004
+
+10. The changes made by Jean-Eudes are available in the GitHub repository he just created :
+
+https://github.com/JeanEudesH/hackathonApp
 
 
