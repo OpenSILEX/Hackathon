@@ -30,7 +30,13 @@ devtools::install_github("OpenSILEX/opensilex-datavis-rapp-demo", build_vignette
 5. Initialize your connection with opensilex.org and get a token using the following R code :
 
 ```{r}
+library(phisWSClientR)
 initializeClientConnection(apiID="ws_private", url = "www.opensilex.org/openSilexAPI/rest/")
 token <- getToken("guest@opensilex.org","guest")$data
 ```
 
+6. Explore **phisWSClientR** package functions :
+
+```{r}
+?phisWSClientR::getEnvironmentData
+```
