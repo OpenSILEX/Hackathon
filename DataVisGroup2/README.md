@@ -50,32 +50,32 @@ token <- getToken("guest@opensilex.org","guest")$data
 library(compareVariableDemo)
 ```
 
-8. Put the _devOutliers.R_ file in R folder (remove unnecessary functions) using RStudio
+10. Put the _devOutliers.R_ file in R folder (remove unnecessary functions) using RStudio
 
 `We stopped here , the next steps were the following :`
 
-10. Add function documentation (functions imports, parameters descriptions) using roxygen, and update documentation 
+11. Add function documentation (functions imports, parameters descriptions) using roxygen, and update documentation 
 
 ```{r}
 roxygen2::roxygenise()
 ```
-11.  Add right package description in DESCRIPTION file
+12.  Add right package description in DESCRIPTION file
 
-12.  Check and build your package using Rstudio (or with devtools) and correct warnings
+13.  Check and build your package using Rstudio (or with devtools) and correct warnings
 
 ```{r}
 devtools::check()
 ```
 
-13.  Modify your index.html (form) file in inst/www/ folder to create the right form
+14.  Modify your index.html (form) file in inst/www/ folder to create the right form
 
-14.  Modify your app.js file in inst/www/js folder to create the right bindings (set inputs and get the functions) between the form and the showPlot() function
+15.  Modify your app.js file in inst/www/js folder to create the right bindings (set inputs and get the functions) between the form and the showPlot() function
 
-15.  The changes made by the group are available in the GitHub repository , Arnaud just created :
+16.  The changes made by the group are available in the GitHub repository , Arnaud just created :
 
  - https://github.com/niio972/opensilex-hackathon-events-vs-env
 
-16. The result can be test on opensilex openCPU server :
+17. The result can be test on opensilex openCPU server :
 
  - [opencpu hackathon events vs env](http://opensilex.org:8004/ocpu/apps/niio972/opensilex-hackathon-events-vs-env/www/)
 
