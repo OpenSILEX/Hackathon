@@ -6,7 +6,7 @@ This repository shows the process of the Data Visualization group and its result
 
 Use the BrAPI calls implemented in OpenSILEX / PHIS to retrieve both environmental and phenotypic data and then display them in a responsive histogram.
 
-For this purpose, we will test if it is possible to adapt the BrAPI-Graphical-Filtering BrAPPS created by the BrAPI team : https://github.com/solgenomics/BrAPI-Graphical-Filtering
+For this purpose, we will test if it is possible to adapt the BrAPI-Graphical-Filtering BrAPP created by the BrAPI team : https://github.com/solgenomics/BrAPI-Graphical-Filtering
 
 ## Process step by step
 
@@ -35,22 +35,28 @@ initializeClientConnection(apiID="ws_private", url = "www.opensilex.org/openSile
 token <- getToken("guest@opensilex.org","guest")$data
 ```
 
-6. Explore **phisWSClientR** package functions :
+6. Explore the **phisWSClientR** package functions :
 
 ```{r}
 ?phisWSClientR::getEnvironmentData
 ```
 
-7. Change the *plotVarDemo.R* file using RStudio
+7. Explore the **compareVariableDemo** package (dowloaded from the OpenSILEX/opensilex-datavis-rapp-demo repository) functions :
 
-8. Change the *getDF.R* file in order to get individual filters and remove the "chosen sensors" section
+```{r}
+library(compareVariableDemo)
+```
 
-9. The variables of interest in our example are :
+8. Change the *plotVarDemo.R* file using RStudio
+
+9. Change the *getDF.R* file in order to get individual filters and remove the "chosen sensors" section
+
+10. The variables of interest in our example are :
 
 - LAI : http://www.opensilex.org/demo/id/variables/v001
 - maximum wind speed : http://www.opensilex.org/demo/id/variables/v004
 
-10. The changes made by Jean-Eudes are available in the GitHub repository he just created :
+11. The changes made by Jean-Eudes are available in the GitHub repository he just created :
 
 https://github.com/JeanEudesH/hackathonApp
 
