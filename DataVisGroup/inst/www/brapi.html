@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>
+      Opensilex Hackathon App
+    </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body style="padding:2em;">
+    <h1>
+      Opensilex Hackathon App
+    </h1>
+    <div class="forward-container">
+      <link rel="stylesheet" property="stylesheet" href="/css/GraphicalFilter.css">
+      <link rel="stylesheet" property="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+      <form id="brapi-form" action="#" class="form-inline" style="margin:1em" name="brapi-form">
+        <div class="form-group">
+          <label for="wsUrl">OpenSilex Server Adress</label> <input type="text" class="form-control" id="wsUrl" name="wsUrl" value="www.opensilex.org/openSilexAPI/rest/">
+        </div>
+
+        <div class="form-group">
+            <label for="opensilex-token">Token</label> <input type="text" class="form-control" id="opensilex-token" name="token" value="d4c6b37097c9937d1c04d8f3771519e9">
+          </div>
+
+          <br></br>
+        <div class="form-group">
+          <label for="opensilex-variable1">variable1</label> <input type="text" class="form-control" id="opensilex-variable1" name="Variable1" value="http://www.opensilex.org/demo/id/variables/v004">
+        </div>
+
+        <div class="form-group">
+            <label for="opensilex-variable2">variable2</label> <input type="text" class="form-control" id="opensilex-variable2" name="Variable2" value="http://www.opensilex.org/demo/id/variables/v005">
+          </div>
+          <button id="submit" type="submit" class="btn btn-primary">
+                Show graph!
+            </button>
+    </form>
+
+    <!-- plotDiv -->
+    <div class="embed-responsive embed-responsive-4by3" >
+            <iframe class="embed-responsive-item" id="plotDiv1" allowfullscreen ></iframe>
+    </div>
+    <div class="embed-responsive embed-responsive-4by3" >
+        <iframe class="embed-responsive-item" id="plotDiv2" allowfullscreen ></iframe>
+    </div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js">
+</script> <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.12.0/d3.js">
+</script> <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js">
+</script> <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js" charset="utf-8">
+</script> <script src="js/app.js">
+</script> <script src="js/opensilex.js">   
+</script> <script src="js/opencpu-0.5.js">
+</script> 
+  </body>
+</html>
