@@ -23,7 +23,7 @@ git clone https://github.com/OpenSILEX/opensilex-datavis-rapp-demo.git
 4. Install the packages necessary to communicate with OpenSILEX / PHIS Web Services :
 
 ```{r}
-devtools::install_github("sanchezi/phisWSClientR", build_vignettes=TRUE) #"sanchezi/docAppPhisWSClientR"
+devtools::install_github("OpenSILEX/phisWSClientR", build_vignettes=TRUE) #"sanchezi/docAppPhisWSClientR"
 devtools::install_github("OpenSILEX/opensilex-datavis-rapp-demo", build_vignettes=TRUE)
 ```
 
@@ -47,7 +47,7 @@ token <- getToken("guest@opensilex.org","guest")$data
 library(compareVariableDemo)
 ```
 
-8. Change the *plotVarDemo.R* file using RStudio
+8. Change the *plotVarDemo.R* file using RStudio and create a histogram visualization
 
 9. Change the *getDF.R* file in order to get individual filters and remove the "chosen sensors" section
 
@@ -59,5 +59,10 @@ library(compareVariableDemo)
 11. The changes made by Jean-Eudes are available in the GitHub repository he just created :
 
 https://github.com/JeanEudesH/hackathonApp
+
+The web app requires OpenCPU to perform R request within web HTML context. It then requires some installation.
+But the R script of the app works without OpenCPU and without the web application. 
+
+This is the result of a hackathon session and then a non stable production.
 
 
