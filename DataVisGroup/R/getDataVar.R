@@ -1,9 +1,8 @@
 #-------------------------------------------------------------------------------
-# Program: getDataVar.R
-# Objective: transform data in suitable form for graph
-# Authors: Chourrout Elise
-# Creation: 15/02/2019
-# Update:
+# Program: plotVarDemo.R
+# Objective: draw graph of environment variable frequency
+# Authors: Hackathon visualization group
+# Creation: 25/03/2019
 #-------------------------------------------------------------------------------
 
 #' @title Get Data from WS2 and formate them
