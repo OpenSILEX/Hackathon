@@ -1,10 +1,10 @@
 Package: hackathonApp
 Type: Package
-Title: Study opensilex variables
+Title: Hackathon app group1
 Version: 0.2.1
-Author: Elise Chourrout, Jean-Eudes Hollebecq, Arnaud Charleroy
-Maintainer: Arnaud Charleroy <arnaud.charleroy@inra.fr>
-Description: More information soon ....
+Author: Hackathon visualization group 1
+Maintainer: 
+Description: the result of a hackathon session between 25 and 26 of march
 License: AGPL-3
 Encoding: UTF-8
 LazyData: true
